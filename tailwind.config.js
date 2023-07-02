@@ -4,7 +4,15 @@ module.exports = {
     './apps/website/src/**/*.{astro,md,js,jsx,svelte,ts,tsx,vue}',
     './libs/**/*.{astro,md,js,jsx,svelte,ts,tsx,vue}',
   ],
-  theme: {},
+  theme: {
+    colors: {
+      secondary: '#275263',
+      primary: '#07364a',
+      white: '#ffffff',
+      black: '#000000',
+    },
+    extend: {},
+  },
 };
 // module.exports = {
 //   content: [
