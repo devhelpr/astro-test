@@ -1,0 +1,46 @@
+---
+export interface Props {
+  title: string;
+  language: string;
+}
+
+const { frontmatter } = Astro.props;
+const language = Astro.props.language || 'en';
+
+import Menu from '../components/Menu.astro';
+---
+
+<!DOCTYPE html>
+<html lang={language}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/10e9e38dca.js"
+      crossorigin="anonymous"></script>
+    <title>{frontmatter.title}</title>
+  </head>
+  <body class="bg-primary">
+    <Menu linkToRootMainLanguage={true} />
+    <slot />
+    <style>
+      :root {
+      }
+
+      html {
+      }
+
+      body {
+        margin: 0;
+      }
+    </style>
+
+    <style is:global></style>
+  </body>
+</html>

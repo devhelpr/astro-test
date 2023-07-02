@@ -1,45 +1,49 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Menu from "../components/Menu.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main>
-    <h1 class="bg-slate-500">
-      Welcome to <span class="text-gradient">Astro</span>
-    </h1>
-    <p class="instructions">
-      To get started, open the directory <code>src/pages</code> in your project.<br
-      />
-      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+<Layout title="Devhelpr homepage" language="en">
+  <Menu />
+  <main
+    class="hero container max-w-full md:max-w-3xl px-4 mx-auto min-h-screen overflow-auto flex flex-col justify-center"
+  >
+    <img class="devhelpr-logo self-center max-w-100 w-[360px]" src="devhelpr.png" />
+    <h1>About devhelpr</h1>
+    <p>
+      In my job as an Application Developer, I want to serve people as good as possible. I achieve this using
+      my up to date knowledge, and with good collaboration. From there I develop software that is
+      user-friendly, beautiful and interactive. I am result oriented and go straight at my goal.
     </p>
-    <ul role="list" class="link-card-grid">
-      <Card
-        href="https://docs.astro.build/"
-        title="Documentation"
-        body="Learn how Astro works and explore the official API docs."
-      />
-      <Card
-        href="https://astro.build/integrations/"
-        title="Integrations"
-        body="Supercharge your project with new frameworks and libraries."
-      />
-      <Card
-        href="https://astro.build/themes/"
-        title="Themes"
-        body="Explore a galaxy of community-built starter themes."
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Astro Community"
-        body="Come say hi to our amazing Astro Discord community. ❤️"
-      />
-      <Card href="https://nx.dev/" title="Nx" body="Learn more about Nx." />
-      <Card
-        href="https://nrwlcommunity.slack.com/"
-        title="Nrwl Community Slack"
-        body="Come chat in the Nrwl Community Slack. ❤️"
-      />
-    </ul>
+    <p>
+      For me, technology is just a tool and not a goal at it self. I adapt quickly, and shall use the
+      environment or platform that fits the solution in the best way possible: Online, Offline, Website,
+      Webapp, Mobile App, Api, Desktop, IoT Sensor, SQL, NoSQL en/of Graph Database. Although my current focus
+      is mainly web frontend application development, I also regularly spend time in the Backend.
+    </p>
   </main>
 </Layout>
+
+<section class="px-4 mx-auto card__container">
+  <Card
+    title="Freelance Developer"
+    iconIllustration="fa-solid fa-mug-saucer"
+    body={`As a freelance developer I work on project in scrum teams or by my self. Resultaat, quality and delivering according to plan is important to me. 
+		An agile scrum way of working is essential with this. 
+		I find clear communication very important.
+	Call or whatsapp me for an appointment or online video call: 06-45078914.
+	I work and live from Zeist, Utrecht.`}
+  />
+  <Card
+    title="Code and Tools"
+    iconIllustration="fa-solid fa-code"
+    body={`I develop using the following programming languages and tools: Typescript, Javascript, C#, HTML5, 
+	CSS3/SASS/Postcss, Tailwind, Gulp/Webpack, NodeJS, React (using hooks), Jest, Testing-library en oa Redux en Zustand, ASP.Net MVC, SQL in meerdere smaken, Visual Studio/Code, Git, Kentico CMS(MVC/Razor), Craft CMS(PHP/Twig), Webassembly (raw en via Rust), Azure devops, Monorepo's met lerna en NX. In earlier projects I used other languages and tools as well: PHP, Objective-C, Java, XCode, Eclipse, C++/C, Adobe Flash, Delphi, 6502 Assembly Language Commodore 64 ;-)`}
+  />
+  <Card
+    title="Flow Based Programming"
+    iconIllustration="fa-solid fa-circle-nodes"
+    body={`As a side project I am developing a Flow-Based-Programming inspired application. The UI is an infinite canvas made using React/Hooks and HTML5 Canvas. Read more about FBP here.`}
+  />
+</section>

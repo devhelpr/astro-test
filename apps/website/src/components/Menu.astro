@@ -1,0 +1,25 @@
+---
+export interface Props {
+  linkToRootMainLanguage?: boolean;
+}
+
+const { linkToRootMainLanguage } = Astro.props;
+---
+
+<nav class="primary-menu">
+  <a href="#">Devlog</a>
+  {
+    !linkToRootMainLanguage && (
+      <a class="ml-auto" href="/nl">
+        nl
+      </a>
+    )
+  }
+  {
+    linkToRootMainLanguage && (
+      <a class="ml-auto" href="/">
+        en
+      </a>
+    )
+  }
+</nav>
