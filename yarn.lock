@@ -75,6 +75,15 @@
   dependencies:
     prismjs "^1.28.0"
 
+"@astrojs/tailwind@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/tailwind/-/tailwind-4.0.0.tgz#27f13b54ba65653b6586bb26cbfd02a1b3fec78a"
+  integrity sha512-HmCAXFFes7MUBt5ihdfH1goa8QyGkHejIpz6Z4XBKK9VNYY9G2E3brCn8+pNn5zAOzcwl3FYcuH2AiOa/NGoMQ==
+  dependencies:
+    autoprefixer "^10.4.14"
+    postcss "^8.4.24"
+    postcss-load-config "^4.0.1"
+
 "@astrojs/telemetry@^2.1.1":
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/@astrojs/telemetry/-/telemetry-2.1.1.tgz#e371ce343fd70313334219cf36365c04b3a65fb6"
