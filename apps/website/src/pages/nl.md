@@ -5,7 +5,12 @@ language: "nl"
 ---
 
 <main class="container max-w-5xl px-4 mx-auto min-h-screen overflow-auto flex flex-col justify-center">
-	<img class="devhelpr-logo self-center max-w-100 w-[360px]" src="/devhelpr.png" />
+	<img
+      class="devhelpr-logo self-center max-w-100 w-[360px] aspect-[360/332]"
+      src="devhelpr.png"
+      alt="Devhelpr logo"
+      width="360"
+    />
 	<h1>Over devhelpr</h1>
 	<p>In mijn werk als programmeur wil ik mensen zo goed mogelijk van dienst zijn. Dit bereik ik door mijn kennis in te zetten, en door een goede samenwerking. Om van daaruit software te ontwikkelen die gebruiksvriendelijk, aantrekkelijk en interactief is. Ik ga op mijn doel af, en ben resultaat gericht.</p>			
 	<p>Techniek is voor mij slechts een middel en geen doel opzich. Ik pas me dan ook snel aan, en zal het platform gebruiken dat het beste bij een oplossing past: Online, Offline, Website, Webapp, Mobile App, Api, Desktop, IoT Sensor, SQL, NoSQL en/of Graph Database. Al ligt mijn huidige focus behoorlijk aan de frontend kant waarbij ik zeer regelmatig mij aan de pure backend kant begeef.</p>

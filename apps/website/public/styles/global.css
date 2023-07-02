@@ -20,7 +20,7 @@
     }
 
     .devhelpr-logo {
-        @apply py-8;
+        @apply my-8;
     }
 
     .hero h1 {
